@@ -1,0 +1,296 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-image: url(../img/inicio/fondo-degradado-gris.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px 80px;
+  gap: 40px;
+  min-height: 60vh;
+}
+
+.hero-texto {
+  max-width: 50%;
+}
+
+.hero-texto h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  line-height: 1.2;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 35px;
+}
+
+.hero-imagen {
+  max-width: 45%;
+  display: flex;
+  justify-content: flex-end;
+
+}
+
+.hero-imagen img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+
+.boton-hero {
+  display: inline-block;
+  background: #e27b06;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 0 4px 15px rgba(226, 123, 6, 0.4);
+  transition: all 0.3s ease;
+}
+
+.boton-hero:hover {
+  background: #d66f00;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(226, 123, 6, 0.6);
+}
+
+section.destacados,
+section.caracteristicas,
+section.servicios {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* los cuadritos de por qué elegirnos */
+
+.destacados h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.contenedor-destacados {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tarjeta-destacado {
+  width: 100%;
+  background: white;
+  border: 1px solid #e8e1d6;
+  padding: 30px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta-destacado:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-destacado img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+
+  border-radius: 20px;
+  border: 4px solid #e8e1d6;
+}
+
+.tarjeta-destacado h3 {
+  font-size: 20px;
+  color: #e27b06;
+  margin-bottom: 15px;
+}
+
+.tarjeta-destacado p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* tarjetas de servicios */
+.lista-servicios {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.servicios h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.servicio {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.servicio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.servicio h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.servicio p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* la lista con chulitos */
+
+.caracteristicas h2 {
+  text-align: center;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+.caracteristicas-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.caracteristicas-imagen {
+  flex: 1;
+  max-width: 500px;
+}
+
+.caracteristicas-imagen img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.lista-caracteristicas {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.caracteristica {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.caracteristica:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.caracteristica strong {
+  color: #e27b06;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.caracteristica p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* oferta del final */
+
+.promo {
+  width: 100%;
+  margin-top: 20px;
+
+  padding: 60px 20px;
+  background: white;
+  text-align: center;
+
+}
+
+.promo h2 {
+  font-size: 36px;
+  color: #e27b06;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.promo p {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.promo-subtexto {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.boton-promo {
+  display: inline-block;
+  background: #e27b06;
+  color: white;
+  padding: 15px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(226, 123, 6, 0.3);
+  transition: all 0.3s ease;
+}
+
+.boton-promo:hover {
+  background: #d66f00;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(226, 123, 6, 0.4);
+}
+
+/* logo de la oferta */
+.promo-logo {
+  width: 260px;
+  height: auto;
+  margin: 30px auto;
+}

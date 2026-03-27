@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario de Idiomas</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/formulario.css" />
+</head>
+
+<body>
+  <!-- Acá arranca el menú  -->
+  <header>
+    <nav class="menu">
+      <a class="logo" href="index.html">
+        <img src="img/logo-blanco.png" alt="AMY Lingual" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="nosotros.html">Nosotras</a></li>
+
+      </ul>
+      <div class="nav-user">
+        <a href="incribirme.html" class="nav-cta">Inscribirme ahora</a>
+        <a href="login.html" class="nav-login"><img src="img/user.svg" alt="login"><span
+            id="usuarioActivo">Ingresar</span></a>
+      </div>
+    </nav>
+  </header>
+  <!-- contenido fuerte de la página -->
+  <main>
+    <!-- Acá arranca toooodo el cuestionario de inscripción -->
+    <section class="formulario">
+      <h1>Formulario de Idiomas</h1>
+      <p>Rellena los datos solicitados por favor.</p>
+      <p class="nota-requerida">
+        Las preguntas marcadas con * son requeridas.
+      </p>
+
+      <form id="formulario-idiomas" action="./registro.html" method="post">
+        <div class="seccion">
+          <h3>Datos Personales</h3>
+
+          <label for="nombre" class="requerido">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="correo" class="requerido">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" required />
+        </div>
+
+        <!-- Esta partecita es solo para que elijan el idioma -->
+        <div class="seccion">
+          <h3>Idiomas</h3>
+
+          <div class="campo">
+            <label for="idioma-nativo" class="requerido">Idioma Nativo</label>
+            <select id="idioma-nativo" name="idioma-nativo">
+              <option value="es">Español</option>
+              <option value="en">Inglés</option>
+              <option value="fr">Portugués</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="idioma-practicar" class="requerido">Idioma a Practicar</label>
+            <select id="idioma-practicar" name="idioma-practicar">
+              <option value="en">Inglés</option>
+              <option value="es">Español</option>
+              <option value="fr">Portugués</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="nivel" class="requerido">Nivel Actual</label>
+            <select id="nivel" name="nivel">
+              <option value="principiante">Principiante</option>
+              <option value="intermedio">Intermedio</option>
+              <option value="avanzado">Avanzado</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Y acá recogemos la disponibilidad que tienen -->
+        <div class="seccion">
+          <h3>Información Adicional</h3>
+
+          <label class="requerido">Género</label>
+          <div class="grupo-radio">
+            <label><input type="radio" name="genero" value="masculino" required />
+              Masculino</label>
+            <label><input type="radio" name="genero" value="femenino" />
+              Femenino</label>
+            <label><input type="radio" name="genero" value="otro" /> Otro</label>
+            <label><input type="radio" name="genero" value="no-decir" /> Prefiero
+              no decirlo</label>
+          </div>
+
+          <br />
+
+          <label for="fecha-nacimiento">Fecha de Nacimiento</label>
+          <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" />
+
+          <br />
+          <br />
+
+          <label for="fecha-inicio">Fecha Tentativa para Iniciar</label>
+          <input type="date" id="fecha-inicio" name="fecha-inicio" />
+
+          <br />
+          <br />
+
+          <label>Horario de Disponibilidad</label>
+          <div class="disponibilidad">
+            <div class="dias">
+              <label><input type="checkbox" name="dias" value="lun" /> Lun</label>
+              <label><input type="checkbox" name="dias" value="mar" /> Mar</label>
+              <label><input type="checkbox" name="dias" value="mie" /> Mié</label>
+              <label><input type="checkbox" name="dias" value="jue" /> Jue</label>
+              <label><input type="checkbox" name="dias" value="vie" /> Vie</label>
+              <label><input type="checkbox" name="dias" value="sab" /> Sáb</label>
+              <label><input type="checkbox" name="dias" value="dom" /> Dom</label>
+            </div>
+            <!-- Chicas, uso type time y date en estos campos para que en los celus se abra el reloj y calendari -->
+            <div class="rango-horario">
+              <label for="desde">Desde</label>
+              <input type="time" id="desde" name="desde" />
+              <label for="hasta">Hasta</label>
+              <input type="time" id="hasta" name="hasta" />
+            </div>
+          </div>
+
+          <br />
+
+          <label for="plan" class="requerido">Selección de Plan</label>
+          <select id="plan" name="plan" required>
+            <option value="basico">Básico</option>
+            <option value="intermedio">Intermedio</option>
+            <option value="avanzado">Avanzado</option>
+            <option value="empresa">Empresa</option>
+            <option value="familiar">Familiar</option>
+          </select>
+        </div>
+
+        <label for="comentarios">Comentarios (Opcional)</label>
+        <textarea id="comentarios" name="comentarios" rows="4"></textarea>
+
+        <div class="acciones">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <!-- Acá footer -->
+  <footer>
+    <p>
+      &copy; 2026 AMY Lingual. Derechos reservados a Yury, Andrea y Martha.
+    </p>
+  </footer>
+</body>
+
+</html>
