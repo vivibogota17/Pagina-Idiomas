@@ -16,6 +16,9 @@
       <a class="logo" href="index.html">
         <img src="img/logo-blanco.png" alt="AMY Lingual" />
       </a>
+      <!-- botón de hamburguesa -->
+      <input type="checkbox" id="check-menu" class="check-menu">
+      <label for="check-menu" class="checkbtn">☰</label>
       <ul class="nav-links">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="planes.html">Planes</a></li>
@@ -39,7 +42,7 @@
         Las preguntas marcadas con * son requeridas.
       </p>
 
-      <form id="formulario-idiomas" action="./registro.html" method="post">
+      <form id="formulario-idiomas" action="./registro.html" method="post" onsubmit="return envioFormulario()">
         <div class="seccion">
           <h3>Datos Personales</h3>
 
@@ -69,15 +72,6 @@
               <option value="en">Inglés</option>
               <option value="es">Español</option>
               <option value="fr">Portugués</option>
-            </select>
-          </div>
-
-          <div class="campo">
-            <label for="nivel" class="requerido">Nivel Actual</label>
-            <select id="nivel" name="nivel">
-              <option value="principiante">Principiante</option>
-              <option value="intermedio">Intermedio</option>
-              <option value="avanzado">Avanzado</option>
             </select>
           </div>
         </div>
@@ -151,6 +145,13 @@
         </div>
       </form>
     </section>
+  <script>
+    function envioFormulario() {
+      alert("registro exitoso");
+      window.location.href = "index.html";
+      return false;
+    }
+  </script>
   </main>
   <!-- Acá footer -->
   <footer>
