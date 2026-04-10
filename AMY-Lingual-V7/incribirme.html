@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout de Inscripción - AMY Lingual</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/inscripcion.css">
+</head>
+
+<body>
+    <!-- Acá arranca el menú -->
+    <header>
+        <nav class="menu">
+            <a class="logo" href="index.html">
+                <img src="img/logo-blanco.png" alt="AMY Lingual" />
+            </a>
+            <!-- botón de hamburguesa -->
+            <input type="checkbox" id="check-menu" class="check-menu">
+            <label for="check-menu" class="checkbtn">☰</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="planes.html">Planes</a></li>
+                <li><a href="nosotros.html">Nosotras</a></li>
+
+            </ul>
+            <div class="nav-user">
+                <a href="formulario.html" class="nav-cta">Inscribirme ahora</a>
+                <a href="login.html" class="nav-login"><img src="img/user.svg" alt="login"><span
+                        id="usuarioActivo">Ingresar</span></a>
+            </div>
+        </nav>
+    </header>
+    <!-- ACA TERMINA EL MENU -->
+
+
+    <main>
+        <!-- Todo el formulario de la inscripción entra acá -->
+        <h1 class="checkout-header-title">Inscripción</h1>
+        <div class="checkout-container">
+
+
+
+            <div class="checkout-pasos">
+
+
+                <div class="checkout-paso">
+                    <div class="paso-header">
+                        <span class="paso-numero">1</span>
+                        <h2>Información del usuario</h2>
+                    </div>
+                    <div class="paso-contenido form-info">
+                        <div class="form-group">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" placeholder="Ingresa tu nombre completo" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Correo electrónico</label>
+                                <input type="email" placeholder="tu@correo.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Teléfono Celular</label>
+                                <div class="input-telefono">
+                                    <span class="prefijo">+57</span>
+                                    <input type="tel" placeholder="Número" required>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="checkout-paso">
+                    <div class="paso-header">
+                        <span class="paso-numero">2</span>
+                        <h2>Pago</h2>
+                    </div>
+                    <div class="paso-contenido metodos-pago">
+                        <p class="instruccion-pago">Selecciona tu método de pago para Colombia:</p>
+
+                        <label class="opcion-pago">
+                            <input type="radio" name="pago" value="nequi" checked>
+                            <div class="pago-box">
+                                <img src="img/medios-pagos/nequi.webp" alt="nequi">
+                            </div>
+                        </label>
+
+                        <label class="opcion-pago">
+                            <input type="radio" name="pago" value="daviplata">
+                            <div class="pago-box">
+                                <img src="img/medios-pagos/daviplata.png" alt="daviplata">
+                            </div>
+                        </label>
+
+                        <label class="opcion-pago">
+                            <input type="radio" name="pago" value="breb">
+                            <div class="pago-box">
+                                <img src="img/medios-pagos/bre-v.png" alt="bre-v">
+                            </div>
+                        </label>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="checkout-sidebar">
+                <div class="resumen-compra">
+                    <h2>Resumen de mi compra</h2>
+
+                    <div id="carritoContainer">
+
+                    </div>
+
+                    <div class="resumen-total"
+                        style="display: flex; justify-content: space-between; margin-top: 15px; border-top: 1px solid #ddd; padding-top: 15px;">
+                        <h3 style="font-size: 1.1rem;">Total a Pagar</h3>
+                        <p id="totalPrecio">$0</p>
+                    </div>
+
+                    <div class="seguridad-pago">
+                        <p>Los pagos son seguros y están encriptados.blablablabla</p>
+                    </div>
+
+                    <a href="formulario.html" class="boton-checkout-final"
+                        style="display: block; text-align: center; text-decoration: none; box-sizing: border-box;">Confirmar
+                        Compra</a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!--  pie de página con los derechos y esooooooooooooo -->
+    <footer>
+        <p>&copy; 2026 AMY Lingual. Derechos reservados a Yury, Andrea y Martha.</p>
+    </footer>
+    <script src="js/incripcion.js"></script>
+</body>
+
+</html>

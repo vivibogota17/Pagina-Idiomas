@@ -1,0 +1,296 @@
+.checkout-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 20px;
+  align-items: start;
+}
+
+.checkout-header-title {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  color: #333;
+
+}
+
+
+.checkout-pasos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.checkout-paso {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+.paso-header {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.paso-numero {
+  color: #e27b06;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.paso-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.paso-contenido {
+  padding: 20px;
+}
+
+/* los campos del formulario */
+.form-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.form-group input {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #e27b06;
+  box-shadow: 0 0 0 2px rgba(226, 123, 6, 0.15);
+}
+
+.input-telefono {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.input-telefono:focus-within {
+  border-color: #e27b06;
+  box-shadow: 0 0 0 2px rgba(226, 123, 6, 0.15);
+}
+
+.input-telefono .prefijo {
+  background: #f5f5f5;
+  padding: 10px 12px;
+  color: #666;
+  font-weight: bold;
+  font-size: 15px;
+  border-right: 1px solid #ddd;
+}
+
+.input-telefono input {
+  border: none !important;
+  box-shadow: none !important;
+  flex: 1;
+  border-radius: 0;
+}
+
+/* el botón gordo naranja */
+
+.boton-checkout-final {
+  background: #e27b06;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.2s;
+  width: 100%;
+  margin-top: 15px;
+}
+
+
+.boton-checkout-final:hover {
+  background: #db4411;
+}
+
+/* las cajitas de nequi y daviplata */
+.metodos-pago {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.instruccion-pago {
+  grid-column: 1 / -1;
+  margin-top: 0;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.opcion-pago {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.opcion-pago input[type="radio"] {
+  display: none;
+  /* Ocultamos el círculo base para que la caja entera sea el radio */
+}
+
+.pago-box {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+}
+
+.pago-box img {
+  max-width: 100%;
+  max-height: 35px;
+  object-fit: contain;
+}
+
+.opcion-pago input[type="radio"]:checked+.pago-box {
+  border-color: #e27b06;
+  background-color: #fffaf5;
+  box-shadow: 0 0 0 2px #e27b06;
+}
+
+
+
+.resumen-compra {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  padding: 25px;
+}
+
+.resumen-compra h2 {
+  font-size: 18px;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.resumen-item.principal {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #333;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 20px;
+}
+
+.resumen-item.principal h3 {
+  margin: 0;
+  font-size: 17px;
+  color: #333;
+}
+
+.resumen-item.principal p {
+  margin: 0;
+  font-weight: normal;
+  color: #555;
+  font-size: 14px;
+}
+
+.resumen-item.principal .item-precio {
+  font-size: 20px;
+  font-weight: bold;
+  color: #e27b06;
+}
+
+.resumen-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #eee;
+}
+
+.resumen-total h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.resumen-total p {
+  margin: 0;
+  font-size: 24px;
+  color: #e27b06;
+}
+
+.seguridad-pago {
+  text-align: center;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+/* para que se vea bien en celulares */
+@media (max-width: 900px) {
+  .checkout-container {
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .checkout-sidebar {
+    position: static;
+  }
+}

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Planes</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/planes.css" />
+</head>
+
+<body>
+  <!-- menu -->
+  <header>
+    <nav class="menu">
+      <a class="logo" href="index.html">
+        <img src="img/logo-blanco.png" alt="AMY Lingual" />
+      </a>
+      <!-- botón de hamburguesa -->
+      <input type="checkbox" id="check-menu" class="check-menu">
+      <label for="check-menu" class="checkbtn">☰</label>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="planes.html">Planes</a></li>
+        <li><a href="nosotros.html">Nosotras</a></li>
+
+      </ul>
+      <div class="nav-user">
+        <a href="formulario.html" class="nav-cta">Inscribirme ahora</a>
+        <a href="login.html" class="nav-login"><img src="img/user.svg" alt="login"><span
+            id="usuarioActivo">Ingresar</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Elige el mejor plan para tí</h1>
+    <!-- los planes por acá -->
+    <section class="planes-cards">
+      <div class="card-plan">
+        <h2>Plan Básico</h2>
+        <div class="plan-img">
+          <img src="img/plan/basico.png" alt="grupo de estudiantes" />
+        </div>
+
+        <ul class="plan-beneficios">
+          <li>Clases grupales (4-5 personas)</li>
+          <li>2 clases semanales de 90 minutos</li>
+          <li>Enfoque en conversación y práctica</li>
+        </ul>
+        <div class="plan-precio">
+          <p class="title-precio">Precio:</p>
+          <p class="precio">$150.000 <span>COP/MES</span></p>
+        </div>
+        <button onclick="agregarAlCarrito(1)">Elegir este Plan</button>
+      </div>
+      <div class="card-plan">
+        <h2>Plan Intermedio</h2>
+        <div class="plan-img">
+          <img src="img/plan/intermedio.png" alt="grupo de estudiantes" />
+        </div>
+
+        <ul class="plan-beneficios">
+          <li>Clases grupales (4-5 personas)</li>
+          <li>3 clases semanales de 90 minutos</li>
+          <li>Conversación avanzada y preparación de exámenes</li>
+        </ul>
+        <div class="plan-precio">
+          <p class="title-precio">Precio:</p>
+          <p class="precio">$220.000 <span>COP/MES</span></p>
+        </div>
+        <button onclick="agregarAlCarrito(2)">Elegir este Plan</button>
+      </div>
+      <div class="card-plan">
+        <h2>Plan Avanzado</h2>
+        <div class="plan-img">
+          <img src="img/plan/avanzado.png" alt="grupo de estudiantes" />
+        </div>
+
+        <ul class="plan-beneficios">
+          <li>Clases individuales o en parejas</li>
+          <li>4 clases semanales de 60 minutos</li>
+          <li>Contenido personalizado según objetivos</li>
+        </ul>
+        <div class="plan-precio">
+          <p class="title-precio">Precio:</p>
+          <p class="precio">$380.000 <span>COP/MES</span></p>
+        </div>
+        <button onclick="agregarAlCarrito(3)">Elegir este Plan</button>
+      </div>
+      <div class="card-plan">
+        <h2>Plan Para Empresa</h2>
+        <div class="plan-img">
+          <img src="img/plan/empresa.png" alt="grupo de estudiantes" />
+        </div>
+
+        <ul class="plan-beneficios">
+          <li>Programas personalizados para equipos (mín. 6 personas)</li>
+          <li>Reportes mensuales de progreso</li>
+          <li>Soporte y asesoría dedicada</li>
+        </ul>
+        <div class="plan-precio">
+          <p class="title-precio">Precio:</p>
+          <p class="precio">Consultar <span>COTIZACIÓN</span></p>
+        </div>
+        <button onclick="agregarAlCarrito(4)">Solicitar Cotización</button>
+      </div>
+      <div class="card-plan">
+        <h2>Plan Familiar</h2>
+        <div class="plan-img">
+          <img src="img/plan/familiar.png" alt="grupo de estudiantes" />
+        </div>
+
+        <ul class="plan-beneficios">
+          <li>Clases grupales para familias (3-4 miembros)</li>
+          <li>2-3 clases semanales de 75 minutos</li>
+          <li>Aprendizaje a ritmo compartido y divertido</li>
+          <li>Descuento especial por familia completa</li>
+        </ul>
+        <div class="plan-precio">
+          <p class="title-precio">Precio:</p>
+          <p class="precio">$280.000 <span>COP/MES</span></p>
+        </div>
+        <button onclick="agregarAlCarrito(5)">Elegir este Plan</button>
+      </div>
+    </section>
+  </main>
+  <!--  pie de página con los derechos y eso -->
+  <footer>
+    <p>
+      &copy; 2026 AMY Lingual. Derechos reservados a Yury, Andrea y Martha.
+    </p>
+  </footer>
+  <script src="js/incripcion.js"></script>
+</body>
+
+</html>

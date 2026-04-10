@@ -1,0 +1,83 @@
+/* vista de nosotras */
+.contenedor-nosotras {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* portada superior */
+.hero-nosotras {
+    background-image: url(../img/inicio/fondo-degradado-gris.jpg);
+    background-position: top center;
+    justify-content: center;
+    text-align: center;
+    min-height: 60vh;
+}
+
+.hero-nosotras .hero-texto {
+    max-width: 800px;
+}
+
+.hero-nosotras h1 {
+    font-size: 48px;
+    color: #333;
+}
+
+.hero-nosotras p {
+    font-size: 20px;
+}
+
+/* la historia y misión */
+.proposito {
+    background-color: #ffffff;
+}
+
+.texto-proposito p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* nuestros perfiles */
+.equipo-seccion {
+    background-color: #f6f6f6;
+    padding: 80px 20px;
+}
+
+.tarjeta-nosotras {
+    width: 100%;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #e8e1d6;
+    transition: transform 0.3s ease;
+    position: relative;
+}
+
+.tarjeta-nosotras:hover {
+    transform: translateY(-3px);
+}
+
+.perfil-img {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.perfil-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.tarjeta-nosotras h3 {
+    font-size: 22px;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
